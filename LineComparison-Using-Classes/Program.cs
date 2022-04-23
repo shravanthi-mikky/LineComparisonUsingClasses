@@ -3,6 +3,7 @@ using LineComparison_Using_Classes;
 //creating objects
 UC1 uc1 = new();
 uc2_CompareUsingEquals equals = new();
+CompareTo_uc3 compare = new();
 //taking input for first line coordinates
 double x1 = uc1.Input();
 double x2 = uc1.Input();
@@ -21,3 +22,5 @@ double finalResult2 = uc1.Distance(p, r, q, s);
 Console.WriteLine("Distance between {0},{1} and {2},{3} is {4:F}", p, q, r, s, finalResult2);
 //calling method from uc2 to compare lenthgs using Equals
 equals.ComparisionByEquals(finalResult, finalResult2);
+//calling method from uc2 to compare lenthgs using CompareTo
+compare.CompareToMethod(finalResult, finalResult2);
